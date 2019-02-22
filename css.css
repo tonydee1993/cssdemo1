@@ -1,4 +1,5 @@
 body{
+    background:#efefef;
     color:#000;
     margin:0;
 }
@@ -85,7 +86,6 @@ a{
   
 }
 .userCard{
-  border:1px solid red;
   max-width:940px;
   margin-left:auto;
   margin-right: auto;
