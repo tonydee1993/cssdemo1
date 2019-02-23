@@ -16,6 +16,12 @@ a{
     color:inherit;
     text-decoration: none;
 }
+ul,ol{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
 .clearfix::after{
     content:"";
     display:block;
@@ -68,7 +74,7 @@ a{
 }
 .rs{
     margin-right: 4px;
-    color:#E6686A;
+    color:#4b7aca;
 }
 .cardlogo{
     color:#9a9da2;
@@ -85,14 +91,18 @@ a{
   background-color: rgba(0,0,0,0.8);
   
 }
+main{
+  margin-top: -340px;
+}
 .userCard{
   max-width:940px;
   margin-left:auto;
   margin-right: auto;
   background-color: #fff;
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.44);
 }
 .userCard .welcome{
-  background: #e6686a;
+  background: #4b7aca;
   color:white;
   padding:4px 16px;
   line-height:22px;
@@ -104,8 +114,8 @@ a{
   display: block;
   border:5px solid transparent;
   width:0px;
-  border-top-color: #e6686a;
-  border-left-color: #e6686a;
+  border-top-color: #4b7aca;
+  border-left-color: #4b7aca;
   position: absolute;
   left:4px;
   top:100%
@@ -137,7 +147,7 @@ a{
   color: #9da0a7;
 }
 .userCard .media{
-  background: #e6686a;
+  background: #4b7aca;
   text-align: center;
 }
 .media svg{
@@ -155,4 +165,150 @@ a{
 }
 .userCard > footer.media > a:hover{
   background: #cf5d5f;
+}
+body > main .downloadResume{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 21px 55px;
+  border:1px solid #cdcfd1;
+  display: inline-block;
+  background: #efefef;
+  border-radius: 4px;
+  color: #3d4451;
+  font-weight: bold;
+  margin: 32px 0;
+  transition: box-shadow 0.2s;
+}
+.downloadResumeWrapper{
+  text-align: center;
+}
+body > main .downloadResume:hover{
+  box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.44);
+}
+.self-intro{
+  max-width:940px;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: kaiti;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.skills,.portfolio{
+  max-width:940px;
+  margin-left:auto;
+  margin-right: auto;  
+  margin-top: 60px;                                 
+}
+.skills>h2,.portfolio>h2{
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.skills > ol{
+  background: white;
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.44);
+  padding: 42px 50px 10px 50px;
+  margin-top: 30px; 
+}
+.skills .progressBar{
+  height: 5px;
+  background: #fae1e1;
+  border-radius: 3px;
+  margin: 4px 0 40px 0;
+}
+.skills .progressBar > .progress{
+  height: 100%;
+  background: #4b7aca;
+  width: 90%;
+  border-radius: 3px;
+}
+.skills > ol >li{
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+.skills > ol >li:nth-child(even){
+  float: right;
+}
+#progress1{
+  width: 90%;
+}
+#progress2{
+  width: 80%;
+}
+#progress3{
+  width: 90%;
+}
+#progress4{
+  width: 70%;
+}
+#progress5{
+  width: 60%;
+}
+#progress6{
+  width: 60%;
+}
+.skills > ol >li>h3{
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+section.portfolio{
+  text-align: center;
+  margin-bottom: 100px;
+}
+section.portfolio>nav{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 32px;
+}
+section.portfolio>nav>ol{
+  display: inline-block;
+  vertical-align: top;
+}
+section.portfolio>nav>ol>li{
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+section.portfolio>nav>ol>li:first-child{
+  margin-left: 0px;
+}
+section.portfolio > nav .bar{
+  height: 5px;
+  background: white;
+  margin: 5px 0 30px 0;
+  border-radius: 3px;
+}
+section.portfolio > nav .bar-inner{
+  height: 100%;
+  background: #4b7aca;
+  border-radius: 3px;
+  transition: all 0.3s;
+
+}
+section.portfolio > nav .bar.state-1 .bar-inner{
+  margin-left: 0;
+  width: 33px;
+}
+section.portfolio > nav .bar.state-2 .bar-inner{
+  margin-left: 64px;
+  width: 50px;
+}
+section.portfolio > nav .bar.state-3 .bar-inner{
+  margin-left: 140px;
+  width: 96px;
+}
+section.portfolio .jobs{
+  position: relative;
+  height: 597px;
+}
+section.portfolio .jobs .big,
+section.portfolio .jobs .small{
+  position: absolute;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.31);
 }
